@@ -1,0 +1,163 @@
+/* Base styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #98ABA1;
+  color: #34464D;
+  transition: background 0.3s, color 0.3s;
+}
+body.dark {
+  background: #34464D;
+  color: #E4E4E4;
+}
+
+/* Header background only */
+.header {
+  height: 300px;
+  background-image: url('thero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Static slogan */
+.main-slogan {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #34464D;
+}
+body.dark .main-slogan {
+  color: #E4E4E4;
+}
+
+/* Toggle button */
+#toggleMode {
+  margin: 20px auto;
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #34464D;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#toggleMode:hover {
+  background-color: #2A383F;
+}
+
+/* Chat Section */
+.chat-section {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #F2F4F3;
+  padding: 20px;
+  border-radius: 10px;
+}
+body.dark .chat-section {
+  background: #40535A;
+}
+.chat-section textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #FFFFFF;
+}
+body.dark .chat-section textarea {
+  background: #4E5F66;
+  color: #fff;
+}
+
+/* Buttons */
+button {
+  background-color: #34464D;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #2A383F;
+}
+
+/* Cards */
+.card {
+  background: #F2F4F3;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+body.dark .card {
+  background: #40535A;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+footer a {
+  color: #34464D;
+  text-decoration: none;
+}
+body.dark footer a {
+  color: #E4E4E4;
+}
+
+/* Chat bubble */
+.bubble {
+  background: #d8e6f0;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  max-width: 80%;
+}
+body.dark .bubble {
+  background: #4c5d63;
+  color: #f0f0f0;
+}
+
+/* Quotes */
+.quotes-section blockquote {
+  font-style: italic;
+  background: #e7edea;
+  padding: 15px;
+  border-left: 5px solid #34464D;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+body.dark .quotes-section blockquote {
+  background: #4c5d63;
+  color: #f0f0f0;
+  border-left-color: #98ABA1;
+}
+
+/* About Me */
+.about-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+body.dark .about-section p {
+  color: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .main-slogan {
+    font-size: 1.5em;
+    margin: 15px;
+  }
+  .card, .chat-section {
+    width: 90%;
+    padding: 15px;
+  }
+  textarea {
+    font-size: 1rem;
+  }
+}
